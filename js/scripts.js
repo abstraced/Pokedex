@@ -41,7 +41,7 @@ function addItem (pokemon) {
 
 function showDetails (pokemon) {
 
-console.log(pokemon.imageUrl);
+console.log(pokemon.imageUrl + " name  " +  pokemon.name);
 
 }
 
