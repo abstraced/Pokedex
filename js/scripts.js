@@ -54,10 +54,12 @@ function displayPicture(url) {
 
 
 var $picture = document.createElement("img");
+$picture.classList.add('pokePict');
 $picture.src =url;
 
- // var $elementToRemove = document.querySelector("image");
-// src.parentElement.removeChild();
+var $elementToRemove = document.querySelector("#image");
+
+$elementToRemove.innerHTML=" ";
 //
 var src = document.getElementById("image");
 src.appendChild($picture);
