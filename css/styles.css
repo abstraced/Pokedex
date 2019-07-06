@@ -27,11 +27,7 @@ grid-row: auto / auto;
 }
 
 
-#image {
-  margin: auto;
 
-
-}
 
 body {
   background-color: #3b4cca;
@@ -60,9 +56,7 @@ ul {
   background-color: #FFDE00 ;
   border-radius: 15px;
 
-  display:flex;
-  flex-direction:row;
-  justify-content: space-around;
+
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
 }
@@ -88,10 +82,40 @@ ul {
 }
 #modal-container {
   display:none;
+  margin-top: 0px;
 
 }
 
+
+
+
+header{
+  padding-top: 1%;
+  margin-top: 1%;
+  border-radius: 15px;
+  background-color: #ff0000;
+  height:100px;
+  min-height: 1%;
+  color: #ffde00;
+  text-shadow: 5px 5px black;
+
+}
+
+.image {
+margin:auto;
+
+width: 50%;
+height: auto;
+bottom: 0;
+align-self: center;
+
+
+}
 #modal-container.is-visible {
+
+  top:150px;
+  padding-top:0px;
+  margin-top:0px;
   color: #ffde00;
   position: fixed;
   box-sizing: border-box;
@@ -99,9 +123,11 @@ ul {
   border-radius: 15px;
   border: 2px black solid;
 
+   z-index:999;
+
 
   width:65%;
-  height: 80%;
+  height: 70%;
   min-height: 30%;
   align-self: center;
 
@@ -109,11 +135,10 @@ ul {
   overflow: auto;
   display:inline;
   text-align: center;
+
 }
 .modal {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+
   min-height:100%;
 
 
@@ -122,29 +147,8 @@ ul {
 
 }
 
-.modal:last-child {
-flex-grow: 3;
-
-
-}
-
-header{
-  padding-top: 1%;
-  margin-top: 1%;
-
-  background-color: #ff0000;
-  height:2%;
-  min-height: 1%;
-  color: #ffde00;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
-}
-
-.image {
-margin:auto;
-height:400px;
-min-height: 100px;
-align-self: center;
-object-fit: contain;
+#modal-container.sticky {
+  position: fixed;
+  top: 5%;
 
 }
